@@ -30,8 +30,8 @@ app.post("/generate-token", async (req, res) => {
           "x-okapi-tenant": "dctuae",
         },
         body: JSON.stringify({
-          username: process.env.USERID,
-          password: process.env.PASSWORD,
+          username: process.env.USERID, // from .env
+          password: process.env.PASSWORD, //from .env
         }),
       }
     );
